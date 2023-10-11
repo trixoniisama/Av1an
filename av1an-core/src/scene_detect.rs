@@ -14,6 +14,7 @@ use crate::{into_smallvec, progress_bar, Encoder, Input, ScenecutMethod, Verbosi
 
 pub fn av_scenechange_detect(
   input: &Input,
+  input_sc: Option<Input>,
   encoder: Encoder,
   total_frames: usize,
   min_scene_len: usize,
